@@ -257,26 +257,31 @@ input, select {
 
 
 @media screen and (min-width:768px){
-
-    /* main3 ??*/
+     /* main3 ??*/
+    
     .main3-wrap{
         display:flex;
         flex-wrap:wrap;
+        width: 88%;
+
     }
 
     .main3-item{
-        width: 30%;
-        
+        width: 48%; 
     }
     .main3-item img{
-        width: 30vw;
+        width: 48%;
 
     }
     .main3-item h1{
         font-weight: bold;
     }   
 
+    
 }
+
+   
+
 
 /* main4 */
 #main4{
@@ -356,12 +361,14 @@ input, select {
  
 
 @media screen and (min-width:768px){
-    .main5-item1 img{ 
-    width: calc((100%-6vw)/3);
+    .main5-item1{ 
+    width: calc(100%/3);
   }
 
   .main5-item1{
     display: inline-block;
+    padding-right: 
+
   }
 
 }
@@ -386,17 +393,20 @@ input, select {
     width: 50%;
     text-align: center;
     line-height: 10em;
+    display: inline-block;
 }
 .main6-2{
     background-color: black;
     width: 50%;
     line-height: 10em;
+    display: inline-block;
 }
 
 /* main7 */
 
 #main7{
     background-color:gray;
+    padding-bottom: 10vh;
 }
 .main7-wrap{
     text-align: center;
@@ -406,14 +416,24 @@ input, select {
 }
 
 .main7-wrap p{
-    line-height: 1.5em;
+    padding-bottom: 5vh;
 }
 
 .main7-1{
+    background-color: red;
+    font-weight: bold;
+    width: 330px;
+    margin: 0 auto;
+    height:50px;
+    font-size: 1.2em;
+    line-height: 50px;
+
+    
     
 }
-
 .main7-wrap a{
-    text-transform: none;
+    text-decoration: none;
     color: white;
 }
+
+/* main8 */
