@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+nav ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+/* change colours to suit your needs */
+
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+/* change colours to suit your needs */
+
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* change border colour to suit your needs */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+input, select {
+	vertical-align: middle;
+}
+/* header */
+
+.head-wrap {
+	display: flex;
+	justify-content: space-between;
+	background-color: pink;
+	line-height: 10vh;
+  font-weight: bold;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  
+}
+.head-wrap h1 {
+	font-size: 1.5em;
+	padding-left: 2vw;
+}
+.head-item ul {
+	display: flex;
+	list-style: none;
+}
+.head-item a {
+	text-decoration: none;
+	color: #000;
+	padding-right: 2vw;
+}
+
+
+/* recruit1 */
+#recruit1{
+  padding-top: 10vh;
+  /*正しいか確認　他に方法はないか*/
+}
+.recruit1-wrap{
+  text-align: center;
+  background-image: url(./img\ 12/mv.png);
+  height: 250px;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 10vh;
+
+}
+
+.recruit1-wrap h1{
+  color: white;
+  font-weight: bold;
+  line-height: 220px;
+  font-size: 2em;
+}
+
+/* recruit2 */
+
+.recruit2-wrap{
+  width: 80%;
+  margin: 0 auto;
+}
+.recruit2-item h1{
+  font-size: 1.8em;
+  line-height: 1.5em;
+  border-bottom: 1px solid gray;
+}
+
+.recruit2-item{
+  margin-bottom: 10vh;
+  
+}
+.recruit2-item p{
+	line-height: 1.5em;
+	margin: 3vh 0;
+}
+
+.recruit2-item table th,td{
+  border: 1px solid gray;
+  line-height: 3em;
+}
+
+.recruit2-item table{
+  width: 100%;
+}
+
+.recruit2-item td{
+  padding-left: 1vw;
+}
+
+/* main7 */
+
+#main7 {
+	background-color: gray;
+	padding-bottom: 10vh;
+}
+.main7-wrap {
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 10vh;
+}
+
+.main7-wrap h1{
+    font-size: 2em;
+    padding-bottom: 3vh;
+}
+
+.main7-wrap p {
+		padding-bottom: 5vh;
+		
+		line-height: 1.5em;
+		/*変更*/
+    
+}
+.main7-1{
+	background-color: red;
+	font-weight: bold;
+	width: 330px;
+	margin: 0 auto;
+	height: 50px;
+	font-size: 1.2em;
+}
+
+.main7-1 p{
+	line-height: 50px;
+}
+.main7-wrap a {
+	text-decoration: none;
+	color: white;
+}
+/* main8 */
+
+.main8-list a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+@media screen and (min-width:768px){
+    .main8-wrap{
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.main8-wrap p{
+    padding-left: 5vw;
+}
+
+.main8-list ul{
+    display: flex;
+    list-style: none;
+}
+
+.main8-list li:not(:last-child){
+    padding: 0 1vw;
+    border-right: 1px solid white;
+
+}
+
+.main8-list li:last-child{
+    padding: 0 5vw 0 1vw;
+
+}
+
+    
+}
+
+@media screen and (max-width:768px){
+
+    .main8-wrap{
+      background-color: #000;
+      color: white;
+			text-align: center;
+			padding: 3vh 0;
+
+    }
+		
+		.main8-wrap p{
+			line-height: 2em;
+		}
+
+		.main8-list a{
+			line-height: 2em;
+		}
+
+}

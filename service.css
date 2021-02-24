@@ -140,12 +140,26 @@ input, select {
   
 }
 
+.s-item2 h1{
+  font-size: 1.5em;
+}
+
+@media screen and (min-width:768px){
+
+/* service2 */
+
 .item-wrap{
   padding: 3vh 0;
   border-top: 1px solid gray;
-  display: flex;
+	display: flex;
+	margin-bottom: 10vh;
 }
-.s-item1 {
+
+.item-wrap:nth-child(4){
+	border-bottom: 1px solid gray;
+}
+
+	.s-item1 {
   width: 30%;
 }
 
@@ -157,13 +171,43 @@ input, select {
   padding: 0 3vw;
 }
 
-.s-item2 h1{
-  font-size: 1.5em;
-}
+
 
 .s-item2 p{
   line-height: 1.5em;
   padding-top: 1vh;
+}
+	
+}
+
+
+@media screen and (max-width:768px){
+
+	/* service2 */
+
+	.item-wrap{
+  padding: 3vh 0;
+  border-top: 1px solid gray;
+	margin-bottom: 3vh;
+}
+
+.item-wrap:nth-child(4){
+	border-bottom: 1px solid gray;
+}
+
+.s-item1 img{
+  width: 100%;
+}
+
+.s-item2{
+	margin-top: 2vh;
+}
+
+.s-item2 p{
+	line-height: 1.5em;
+	margin-top: 1vh;
+}
+
 }
 
 /* main7 */
@@ -185,7 +229,10 @@ input, select {
 }
 
 .main7-wrap p {
-    padding-bottom: 5vh;
+		padding-bottom: 5vh;
+		
+		line-height: 1.5em;
+		/*変更*/
     
 }
 .main7-1{
@@ -195,6 +242,9 @@ input, select {
 	margin: 0 auto;
 	height: 50px;
 	font-size: 1.2em;
+}
+
+.main7-1 p{
 	line-height: 50px;
 }
 .main7-wrap a {
@@ -249,9 +299,17 @@ input, select {
     .main8-wrap{
       background-color: #000;
       color: white;
-      text-align: center;
+			text-align: center;
+			padding: 3vh 0;
 
     }
-    
+		
+		.main8-wrap p{
+			line-height: 2em;
+		}
+
+		.main8-list a{
+			line-height: 2em;
+		}
 
 }

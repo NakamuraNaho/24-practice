@@ -163,7 +163,7 @@ input, select {
 /* main7 */
 
 #main7 {
-	background-color:#f2f2f2;
+	background-color: gray;
 	padding-bottom: 10vh;
 }
 .main7-wrap {
@@ -179,7 +179,10 @@ input, select {
 }
 
 .main7-wrap p {
-    padding-bottom: 5vh;
+		padding-bottom: 5vh;
+		
+		line-height: 1.5em;
+		/*変更*/
     
 }
 .main7-1{
@@ -189,6 +192,9 @@ input, select {
 	margin: 0 auto;
 	height: 50px;
 	font-size: 1.2em;
+}
+
+.main7-1 p{
 	line-height: 50px;
 }
 .main7-wrap a {
@@ -243,10 +249,17 @@ input, select {
     .main8-wrap{
       background-color: #000;
       color: white;
-      text-align: center;
+			text-align: center;
+			padding: 3vh 0;
 
     }
-    
+		
+		.main8-wrap p{
+			line-height: 2em;
+		}
+
+		.main8-list a{
+			line-height: 2em;
+		}
 
 }
-

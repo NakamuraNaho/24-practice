@@ -175,12 +175,14 @@ input, select {
 	text-align: center;
 	padding: 1.2em 0;
 	margin-bottom: 10vh;
+	margin-top: 5vh;
 }
 .main3-item2 a {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
 	font-size: 1.2em;
+	display: block;
 }
 @media screen and (max-width:768px) {
 	.main3-wrap {
@@ -241,7 +243,7 @@ input, select {
 .main4-wrap {
 	width: 85%;
 	margin: 0 auto;
-	padding-top: 10vh;
+	padding-top: 13vh;
 }
 .main4-item1 {
 	display: flex;
@@ -256,12 +258,21 @@ input, select {
 .main4-1-1 {
 	display: inline-block;
 	background-color: red;
-	padding: 6px 15px;
+	height: 30px;
+	width: 160px;
+	text-align: center;
+}
+
+.main4-1-1 p{
+	line-height: 30px;
+	
+	
 }
 .main4-1-1 a {
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
+	
 }
 .main4-item2 {
 	padding-bottom: 10vh;
@@ -292,7 +303,8 @@ input, select {
 .main5-2 {
 	font-weight: bold;
 	padding-bottom: 0.5em;
-	font-size: 1.2em;
+	font-size: 1.1em;
+	
 }
 .main5-item1 img {
 	width: 100%;
@@ -300,12 +312,13 @@ input, select {
 
 @media screen and (min-width:768px){
 	.main5-item1 {
-		width: calc(100%/3);
+		width: calc((100% - 40px) / 3);
+		display: inline-block;
 	}
-	.main5-item1　{
-      display: inline-block;
-		
-    }
+	
+	.main5-item1:not(:nth-child(3)){
+		margin-right: 20px;
+	}
 
 }
 
@@ -358,7 +371,10 @@ input, select {
 }
 
 .main7-wrap p {
-    padding-bottom: 5vh;
+		padding-bottom: 5vh;
+		
+		line-height: 1.5em;
+		/*変更*/
     
 }
 .main7-1{
@@ -368,6 +384,9 @@ input, select {
 	margin: 0 auto;
 	height: 50px;
 	font-size: 1.2em;
+}
+
+.main7-1 p{
 	line-height: 50px;
 }
 .main7-wrap a {
@@ -422,9 +441,17 @@ input, select {
     .main8-wrap{
       background-color: #000;
       color: white;
-      text-align: center;
+			text-align: center;
+			padding: 3vh 0;
 
     }
-    
+		
+		.main8-wrap p{
+			line-height: 2em;
+		}
+
+		.main8-list a{
+			line-height: 2em;
+		}
 
 }
