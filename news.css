@@ -80,16 +80,19 @@ input, select {
 }
 /* header */
 
+/*　変更箇所　*/
+.header{
+	position: sticky;
+  top: 0;
+	
+}
+
 .head-wrap {
 	display: flex;
 	justify-content: space-between;
 	background-color: pink;
 	line-height: 10vh;
   font-weight: bold;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
   z-index: 1;
   
 }
@@ -109,10 +112,7 @@ input, select {
 
 
 /* news1 */
-#news1{
-  padding-top: 10vh;
-  /*正しいか確認　他に方法はないか*/
-}
+
 .news1-wrap{
   text-align: center;
   background-image: url(./img\ 12/mv.png);

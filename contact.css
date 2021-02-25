@@ -80,17 +80,19 @@ input, select {
 }
 /* header */
 
+/*　変更箇所　*/
+.header{
+	position: sticky;
+  top: 0;
+	
+}
 .head-wrap {
 	display: flex;
 	justify-content: space-between;
 	background-color: pink;
 	line-height: 10vh;
   font-weight: bold;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 1;
+  
   
 }
 .head-wrap h1 {
@@ -119,13 +121,13 @@ input, select {
     background-color: black;
   }
 
-  .header-iphone-item{
+  .header-iphone-open{
     text-align: center;
     transform: translateX(-100%);
   }
 
   
-  #input:checked ~ .header-iphone-item{
+  #input:checked ~ .header-iphone-open{
     transform: translateX(0px);
 
   }
@@ -142,7 +144,7 @@ input, select {
 
 /* recruit1 */
 #contact1{
-  padding-top: 10vh;
+ 
   /*正しいか確認　他に方法はないか*/
 }
 .contact1-wrap{
