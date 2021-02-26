@@ -109,27 +109,90 @@ input, select {
 	padding-right: 2vw;
 }
 
+@media screen and (min-width:768px){
+  .herder-iphone{
+    display: none;
+  }
+
+  .header-iphone-open{
+    display: none;
+  }
+
+}
 @media screen and (max-width:768px){
   .header{
     display: none;
   }
 
-  .line{
+ 
+  .herder-iphone input{
+    display: none;
+  }
+  .label-input{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    height: 70px;
+    position: relative;
+  }
+  .label-input h1{
+    font-size: 1.5em;
+  }
+
+  .input-line{
+    position: relative;
+  }
+  
+  .input-line span{
     width: 30px;
     height: 4px;
     margin: 8px;
     background-color: black;
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box; 
+    position: absolute;
+  }
+  .input-line span:nth-last-of-type(1){
+    top: 0;
+    
+  }
+  .input-line span:nth-last-of-type(2){
+    top: 15px;
+  }
+  .input-line span:nth-last-of-type(3){
+    top: 30px;
   }
 
+
+
+  #input:checked ~ .input-line .top{
+    transform: rotate(45deg);
+    top: 14px;
+
+  }
+
+
   .header-iphone-open{
-    text-align: center;
     transform: translateX(-100%);
+    
+  }
+  
+
+  .header-iphone-item{
+    text-align: center;
   }
 
   
   #input:checked ~ .header-iphone-open{
     transform: translateX(0px);
 
+  }
+
+  #input:checked ~ .label-input h1{
+    transform: translateX(-120%);
   }
   
 
