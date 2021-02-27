@@ -89,7 +89,7 @@ input, select {
 .head-wrap {
 	display: flex;
 	justify-content: space-between;
-	background-color: pink;
+	background-color:white;
 	line-height: 10vh;
   font-weight: bold;
   
@@ -113,18 +113,16 @@ input, select {
   .herder-iphone{
     display: none;
   }
-
-  .header-iphone-open{
-    display: none;
-  }
-
 }
 @media screen and (max-width:768px){
   .header{
     display: none;
   }
 
- 
+  .herder-iphone{
+    
+
+  }
   .herder-iphone input{
     display: none;
   }
@@ -135,48 +133,25 @@ input, select {
     margin: 0 auto;
     align-items: center;
     height: 70px;
-    position: relative;
   }
   .label-input h1{
     font-size: 1.5em;
   }
 
-  .input-line{
-    position: relative;
-  }
-  
-  .input-line span{
+
+  .line{
     width: 30px;
     height: 4px;
     margin: 8px;
     background-color: black;
-    display: inline-block;
-    transition: all .4s;
-    box-sizing: border-box; 
-    position: absolute;
-  }
-  .input-line span:nth-last-of-type(1){
-    top: 0;
-    
-  }
-  .input-line span:nth-last-of-type(2){
-    top: 15px;
-  }
-  .input-line span:nth-last-of-type(3){
-    top: 30px;
   }
 
-
-
-  #input:checked ~ .input-line .top{
-    transform: rotate(45deg);
-    top: 14px;
-
-  }
-
+ 
 
   .header-iphone-open{
     transform: translateX(-100%);
+    position: absolute;
+    
     
   }
   
@@ -188,12 +163,16 @@ input, select {
   
   #input:checked ~ .header-iphone-open{
     transform: translateX(0px);
+  
 
   }
 
-  #input:checked ~ .label-input h1{
+
+  #input:checked ~ .label-input{
     transform: translateX(-120%);
+    
   }
+
   
 
   .header-iphone-item a{
@@ -278,47 +257,7 @@ input, select {
   margin-bottom: 10vh;
 }
 
-/* main7 */
 
-#main7 {
-	background-color: gray;
-	padding-bottom: 10vh;
-}
-.main7-wrap {
-	text-align: center;
-	width: 85%;
-	margin: 0 auto;
-	padding-top: 10vh;
-}
-
-.main7-wrap h1{
-    font-size: 2em;
-    padding-bottom: 3vh;
-}
-
-.main7-wrap p {
-		padding-bottom: 5vh;
-		
-		line-height: 1.5em;
-		/*変更*/
-    
-}
-.main7-1{
-	background-color: red;
-	font-weight: bold;
-	width: 330px;
-	margin: 0 auto;
-	height: 50px;
-	font-size: 1.2em;
-}
-
-.main7-1 p{
-	line-height: 50px;
-}
-.main7-wrap a {
-	text-decoration: none;
-	color: white;
-}
 /* main8 */
 
 .main8-list a{

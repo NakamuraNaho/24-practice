@@ -90,7 +90,7 @@ input, select {
 .head-wrap {
 	display: flex;
 	justify-content: space-between;
-	background-color: pink;
+	background-color:white;
 	line-height: 10vh;
   font-weight: bold;
   z-index: 1;
@@ -110,7 +110,77 @@ input, select {
 	padding-right: 2vw;
 }
 
+@media screen and (min-width:768px){
+  .herder-iphone{
+    display: none;
+  }
+}
+@media screen and (max-width:768px){
+  .header{
+    display: none;
+  }
 
+  
+  .herder-iphone input{
+    display: none;
+  }
+  .label-input{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    height: 70px;
+  }
+  .label-input h1{
+    font-size: 1.5em;
+  }
+
+
+  .line{
+    width: 30px;
+    height: 4px;
+    margin: 8px;
+    background-color: black;
+  }
+
+ 
+
+  .header-iphone-open{
+    transform: translateX(-100%);
+    position: absolute;
+    
+    
+  }
+  
+
+  .header-iphone-item{
+    text-align: center;
+  }
+
+  
+  #input:checked ~ .header-iphone-open{
+    transform: translateX(0px);
+  
+
+  }
+
+
+  #input:checked ~ .label-input{
+    transform: translateX(-120%);
+    
+  }
+
+  
+
+  .header-iphone-item a{
+    color: blue;
+    text-decoration: none;
+    padding: 25px 0;
+    display: block;
+  }
+
+}
 /* news1 */
 
 .news1-wrap{
@@ -163,7 +233,7 @@ input, select {
 /* main7 */
 
 #main7 {
-	background-color: gray;
+	background-color:#f3f3f3;
 	padding-bottom: 10vh;
 }
 .main7-wrap {
